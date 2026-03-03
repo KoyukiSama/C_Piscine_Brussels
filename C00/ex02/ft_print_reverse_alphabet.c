@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 16:54:32 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/03 17:44:01 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/03 17:47:40 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar(char c);
 
 // int	main(void)
 // {
-// 	ft_print_alphabet();
+// 	ft_print_reverse_alphabet();
 // 	return (0);
 // }
 
