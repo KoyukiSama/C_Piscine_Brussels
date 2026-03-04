@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 22:41:18 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/03 22:41:18 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/04 11:50:35 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 void	ft_print_numbers(void);
 void	ft_putchar(char c);
 
-int	main(void)
-{
-	ft_print_numbers();
-}
+// int	main(void)
+// {
+// 	ft_print_numbers();
+// }
 
 void	ft_print_numbers(void)
 {
