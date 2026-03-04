@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 22:41:18 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/03 22:41:18 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/04 12:58:57 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 void	ft_print_comb(void);
+int		ft_putdig(char dig1, char dig2, char dig3);
 void	ft_putchar(char c);
 
-int	main(void)
-{
-	ft_print_comb();
-}
+// int	main(void)
+// {
+// 	ft_print_comb();
+// }
 
 void	ft_print_comb(void)
 {
@@ -35,20 +36,28 @@ void	ft_print_comb(void)
 		{
 			while (dig3 <= '9')
 			{
-				ft_putchar(dig1);
-				ft_putchar(dig2);
-				ft_putchar(dig3);
-				if (dig1 == '7' && dig2 == '8' && dig3 == '9');
+				if (ft_putdig(dig1, dig2, dig3))
 					return ;
-				ft_putchar(, );
 				dig3++;
 			}
+			ft_putchar('\n');
 			dig2++;
 			dig3 = dig2 + 1;
 		}
 		dig1++;
 		dig2 = dig1 + 1;
+		dig3 = dig2 + 1;
 	}
+}
+
+int	ft_putdig(char dig1, char dig2, char dig3)
+{
+	ft_putchar(dig1);
+	ft_putchar(dig2);
+	ft_putchar(dig3);
+	if (dig1 == '7' && dig2 == '8' && dig3 == '9')
+		return (1);
+	return (ft_putchar(','), ft_putchar(' '), 0);
 }
 
 void	ft_putchar(char c)
