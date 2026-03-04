@@ -6,20 +6,36 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/04 13:23:14 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/04 16:22:24 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/04 16:47:28 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_putnbr(int nbr);
 void	ft_putchar(char c);
 
-int	main(void)
-{
-	ft_putnbr(1489184);
-}
+// int	main(void)
+// {
+// 	ft_putnbr(-2147483648);
+// 	ft_putchar('\n');
+// 	ft_putnbr(2147483647);
+// 	ft_putchar('\n');
+// 	ft_putnbr(10);
+// 	ft_putchar('\n');
+// 	ft_putnbr(0);
+// 	ft_putchar('\n');
+// 	ft_putnbr(-10);
+// 	ft_putchar('\n');
+// 	ft_putnbr(0);
+// 	ft_putchar('\n');
+// 	ft_putnbr(0);
+// 	ft_putchar('\n');
+// 	ft_putnbr(0);
+// 	ft_putchar('\n');
+// 	ft_putnbr(0);
+// 	ft_putchar('\n');
+// }
 
 void	ft_putnbr(int nbr)
 {
