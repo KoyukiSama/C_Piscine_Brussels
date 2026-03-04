@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/03 22:41:18 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/04 12:58:57 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/04 13:21:53 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	ft_print_comb(void)
 					return ;
 				dig3++;
 			}
-			ft_putchar('\n');
+			//ft_putchar('\n');
 			dig2++;
 			dig3 = dig2 + 1;
 		}
