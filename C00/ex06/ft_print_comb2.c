@@ -12,52 +12,50 @@
 
 #include <unistd.h>
 
-void	ft_print_comb(void);
-int		ft_putdig(char dig1, char dig2, char dig3);
-void	ft_putchar(char c);
+void	ft_print_comb2(void);
+int		ft_putdig(int nbr1, int nbr2);
+void	ft_putnbr(int nbr);
+void	ft_putchar(char nbr);
 
 // int	main(void)
 // {
-// 	ft_print_comb();
+// 	ft_print_comb2();
 // }
 
-void	ft_print_comb(void)
+void	ft_print_comb2(void)
 {
-	char	dig1;
-	char	dig2;
-	char	dig3;
+	int	dig1;
+	int	dig2;
 
-	dig1 = '0';
-	dig2 = '1';
-	dig3 = '2';
-	while (dig1 <= '7')
+	dig1 = 0;
+	dig2 = 1;
+	while (dig1 <= 98)
 	{
-		while (dig2 <= '8')
+		while (dig2 <= 99)
 		{
-			while (dig3 <= '9')
-			{
-				if (ft_putdig(dig1, dig2, dig3))
-					return ;
-				dig3++;
-			}
-			//ft_putchar('\n');
+			if (ft_putdig(dig1, dig2))
+				return ;
 			dig2++;
-			dig3 = dig2 + 1;
 		}
 		dig1++;
 		dig2 = dig1 + 1;
-		dig3 = dig2 + 1;
 	}
 }
 
-int	ft_putdig(char dig1, char dig2, char dig3)
+int	ft_putdig(int nbr1, int nbr2)
 {
-	ft_putchar(dig1);
-	ft_putchar(dig2);
-	ft_putchar(dig3);
-	if (dig1 == '7' && dig2 == '8' && dig3 == '9')
+	ft_putnbr(nbr1);
+	ft_putchar(' ');
+	ft_putnbr(nbr2);
+	if (nbr1 == 98 && nbr2 == 99)
 		return (1);
 	return (ft_putchar(','), ft_putchar(' '), 0);
+}
+
+void	ft_putnbr(int nbr)
+{
+	ft_putchar((nbr / 10) + '0');
+	ft_putchar((nbr % 10) + '0');
 }
 
 void	ft_putchar(char c)

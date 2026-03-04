@@ -40,7 +40,6 @@ void	ft_print_comb(void)
 					return ;
 				dig3++;
 			}
-			//ft_putchar('\n');
 			dig2++;
 			dig3 = dig2 + 1;
 		}
