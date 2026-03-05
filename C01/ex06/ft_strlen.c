@@ -1,0 +1,33 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/05 13:25:51 by kaclaes           #+#    #+#             */
+/*   Updated: 2026/03/05 13:40:44 by kaclaes          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+int	ft_strlen(char *str);
+
+// #include <stdio.h>
+// int	main(int argc, char **argv)
+// {
+// 	if (argc != 2)
+// 		return (1);
+// 	printf("len: %i\n", ft_strlen(argv[1]));
+// }
+
+int	ft_strlen(char *str)
+{
+	int	len;
+
+	len = 0;
+	while (str[len])
+		len++;
+	return (len);
+}
