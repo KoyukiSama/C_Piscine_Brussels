@@ -6,11 +6,9 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 13:25:51 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/05 13:40:44 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/05 14:05:16 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 int	ft_strlen(char *str);
 
