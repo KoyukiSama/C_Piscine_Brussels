@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/03/04 17:26:42 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/05 13:34:56 by kaclaes          ###   ########.fr       */
+/*   Created: 2026/03/05 13:25:51 by kaclaes           #+#    #+#             */
+/*   Updated: 2026/03/05 13:34:20 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_ultimate_div_mod(int *a, int *b);
+#include <unistd.h>
+
+void	ft_putstr(char *str);
 
 // #include <stdio.h>
-// int	main(void)
+// int	main(int argc, char **argv)
 // {
-// 	int	a = 45;
-// 	int	b = 10;
-//
-// 	ft_ultimate_div_mod(&a, &b);
-// 	printf("%i, %i\n", a, b);
+// 	if (argc == 2)
+// 		ft_putstr(argv[1]);
 // }
 
-void	ft_ultimate_div_mod(int *a, int *b)
+void	ft_putstr(char *str)
 {
-	int	tmp_a;
-	int	tmp_b;
+	int	len;
 
-	tmp_a = *a;
-	tmp_b = *b;
-	*a = tmp_a / tmp_b;
-	*b = tmp_a % tmp_b;
+	len = 0;
+	while (str[len])
+		len++;
+	write(1, str, len);
 }
