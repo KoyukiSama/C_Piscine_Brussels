@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/05 15:54:13 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/05 17:17:34 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/09 13:31:21 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		ft_swap(int *a, int *b);
 // #include <stdio.h>
 // void	print_tab(int *tab, int size)
 // {
-// 	size_t	i = 0;
+// 	int	i = 0;
 // 	printf("[");
 // 	while (i < size)
 // 	{
@@ -30,7 +30,7 @@ int		ft_swap(int *a, int *b);
 // }
 // int	main(int argc, char **argv)
 // {
-// 	size_t	i = 0;
+// 	int	i = 0;
 // 	int	tab_size = argc - 1;
 // 	if (argc < 2)
 // 		return (1);
