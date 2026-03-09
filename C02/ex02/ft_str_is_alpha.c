@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 13:48:37 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/09 13:57:54 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/09 14:07:30 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int	ft_str_is_alpha(char *str);
 
 int	ft_str_is_alpha(char *str)
 {
-	while ((*str > 'a' && *str < 'z')
-		|| (*str > 'A' && *str < 'Z'))
+	while ((*str >= 'a' && *str <= 'z')
+		|| (*str >= 'A' && *str <= 'Z'))
 		str++;
 	if (*str == '\0')
 		return (1);
