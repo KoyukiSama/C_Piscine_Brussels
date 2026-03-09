@@ -6,14 +6,13 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 16:52:39 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/09 19:21:55 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/09 20:05:46 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
 
-unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
-
-unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
 
@@ -24,5 +23,5 @@ unsigned int ft_strlcpy(char *dest, char *src, unsigned int size)
 		i++;
 	}
 	dest[i] = '\0';
-	return (ft_strlen(src));
+	return (ft_strlen(dest));
 }
