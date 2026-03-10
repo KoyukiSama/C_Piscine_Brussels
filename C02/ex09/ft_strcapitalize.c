@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 14:29:16 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/09 15:50:48 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/10 15:40:39 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,15 @@ char	*ft_strcapitalize(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (ft_is_lower(str[i]))
-			str[i++] += 'A' - 'a';
-		while (str[i] && ft_is_alphanum(str[i]))
-			i++;
-		while (str[i] && !ft_is_alphanum(str[i]))
-			i++;
+		if (ft_is_alphanum(str[i]))
+		{
+			if (ft_is_lower(str[i]))
+				str[i++] += 'A' - 'a';
+			while (str[i] && ft_is_alphanum(str[i]))
+				i++;
+			i--;
+		}
+		i++;
 	}
 	return (str);
 }
