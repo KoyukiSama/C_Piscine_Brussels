@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 16:05:09 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/09 16:24:22 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/10 15:23:36 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
-	while (src[i])
+	while (i < n && src[i])
 	{
 		dest[i] = src[i];
 		i++;
