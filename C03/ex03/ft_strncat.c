@@ -6,26 +6,26 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 12:14:41 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/11 12:30:59 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/11 12:32:08 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb);
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-int main(int argc, char **argv)
-{
-	char	dest[30];
-	char	ft_dest[30];
-	if (argc != 4)
-		return (1);
-	strcpy(dest, argv[1]);
-	strcpy(ft_dest, argv[1]);
-	printf("   strncat_dest: %s\n", strncat(dest, argv[2], atoi(argv[3])));
-	printf("ft_strncat_dest: %s\n", ft_strncat(ft_dest, argv[2], atoi(argv[3])));
-}
+// #include <stdio.h>
+// #include <string.h>
+// #include <stdlib.h>
+// int main(int argc, char **argv)
+// {
+// 	char	dest[30];
+// 	char	ft_dest[30];
+// 	if (argc != 4)
+// 		return (1);
+// 	strcpy(dest, argv[1]);
+// 	strcpy(ft_dest, argv[1]);
+// 	printf("   strncat_dest: %s\n", strncat(dest, argv[2], atoi(argv[3])));
+// 	printf("ft_strncat_dest: %s\n", ft_strncat(ft_dest, argv[2], atoi(argv[3])));
+// }
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
