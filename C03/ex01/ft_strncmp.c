@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/09 20:16:34 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/09 20:24:22 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/11 15:15:27 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
+	if (n == 0)
+		return (0);
 	while (s1[i] && s1[i] == s2[i] && i < n - 1)
 		i++;
 	return ((unsigned int) s1[i] - (unsigned int) s2[i]);
