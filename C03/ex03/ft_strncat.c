@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 12:14:41 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/11 12:32:08 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/11 12:35:02 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb);
 // 		return (1);
 // 	strcpy(dest, argv[1]);
 // 	strcpy(ft_dest, argv[1]);
-// 	printf("   strncat_dest: %s\n", strncat(dest, argv[2], atoi(argv[3])));
-// 	printf("ft_strncat_dest: %s\n", ft_strncat(ft_dest, argv[2], atoi(argv[3])));
+// 	printf("   strncat: %s\n", strncat(dest, argv[2], atoi(argv[3])));
+// 	printf("ft_strncat: %s\n", ft_strncat(ft_dest, argv[2], atoi(argv[3])));
 // }
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
