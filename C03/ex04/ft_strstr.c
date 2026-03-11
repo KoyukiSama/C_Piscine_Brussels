@@ -6,11 +6,12 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/11 12:41:59 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/11 13:08:38 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/11 13:09:48 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
+
 char	*ft_strstr(char *str, char *to_find);
 
 // #include <stdio.h>
