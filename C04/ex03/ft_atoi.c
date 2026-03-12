@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/12 14:02:43 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/12 14:37:12 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/12 16:15:00 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	ft_atoi(char *str)
 		nbr += *str - '0';
 		str++;
 	}
-	return ((int) (sign * nbr));
+	return ((int)(sign * nbr));
 }
 
 int	ft_isspace(char c)
