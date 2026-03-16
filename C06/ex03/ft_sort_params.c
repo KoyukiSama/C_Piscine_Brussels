@@ -1,20 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/03/16 16:09:47 by kaclaes           #+#    #+#             */
+/*   Updated: 2026/03/16 16:10:12 by kaclaes          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-int	ft_putstr(char *str);
-int	ft_strcmp(char *s1, char *s2);
-int	ft_ptr_swp(char **s1, char **s2);
+int		ft_putstr(char *str);
+int		ft_strcmp(char *s1, char *s2);
+int		ft_ptr_swp(char **s1, char **s2);
 void	ft_sort_strs(char **strs, int strc);
 
-int main(int argc, char **argv)
-{	
-	int	i;
+// int main(int argc, char **argv)
+// {	
+// 	int	i;
 
-	ft_sort_strs(argv + 1, argc - 1);
-	i = 0;
-	while (i < argc - 1)
-		ft_putstr(argv[i++ + 1]);
-	return (0);
-}
+// 	ft_sort_strs(argv + 1, argc - 1);
+// 	i = 0;
+// 	while (i < argc - 1)
+// 		ft_putstr(argv[i++ + 1]);
+// 	return (0);
+// }
 
 void	ft_sort_strs(char **strs, int strc)
 {
@@ -37,7 +49,7 @@ void	ft_sort_strs(char **strs, int strc)
 			return ;
 		i++;
 		j = i + 1;
-	}	
+	}
 }
 
 int	ft_ptr_swp(char **s1, char **s2)
