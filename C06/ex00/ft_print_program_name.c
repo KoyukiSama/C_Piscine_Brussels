@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 16:09:18 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/16 16:21:33 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/17 12:10:08 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	ft_putstr(char *str);
 
-// int main(int argc, char **argv)
-// {
-// 	(void) argc;
-// 	ft_putstr(argv[0]);
-// }
+int main(int argc, char **argv)
+{
+	(void) argc;
+	ft_putstr(argv[0]);
+}
 
 void	ft_putstr(char *str)
 {
