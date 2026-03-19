@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 13:59:53 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/19 13:55:45 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/19 14:19:03 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb);
+int	ft_iterative_power(int nb, int power);
 
 // #include <stdio.h>
 // #include <stdlib.h>
 // int	main(int argc, char **argv)
 // {
-// 	if (argc != 2)
+// 	if (argc != 3)
 // 		return (1);
-// 	printf("%i", ft_recursive_factorial(atoi(argv[1])));
+// 	printf("%i", ft_iterative_power(atoi(argv[1]), atoi(argv[2])));
 // }
 
-int	ft_recursive_factorial(int nb)
+int	ft_iterative_power(int nb, int power)
 {
-	if (nb < 0)
+	int	res;
+
+	res = nb;
+	if (power < 0)
 		return (0);
-	if (nb == 0 || nb == 1)
+	if (power == 0)
 		return (1);
-	return (ft_recursive_factorial(nb - 1) * nb);
+	while (power > 1)
+	{
+		res *= nb;
+		power--;
+	}
+	return (res);
 }
