@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/16 13:31:42 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/16 13:41:09 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/23 15:25:26 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ int	ft_iterative_factorial(int nb)
 	int	res;
 
 	res = 1;
+	if (nb < 0)
+		return (0);
 	while (nb > 1)
 	{
 		res *= nb;
