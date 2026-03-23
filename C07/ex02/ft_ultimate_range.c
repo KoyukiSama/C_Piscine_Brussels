@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 12:41:19 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/17 13:48:05 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/23 17:06:10 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 
 	if (min >= max)
 		return (*range = NULL, 0);
-	size = max - min + 1;
+	size = max - min;
 	arr = malloc(size * sizeof(int));
 	if (!arr)
 		return (-1);
