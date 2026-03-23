@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 12:41:19 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/17 13:47:52 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/23 16:43:48 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	*ft_range(int min, int max);
 // 	if (!arr)
 // 		return (2);
 // 	int	i = 0;
-// 	int	size = atoi(argv[2]) - atoi(argv[1]) + 1;
+// 	int	size = atoi(argv[2]) - atoi(argv[1]);
 // 	printf("[");
 // 	while (i < size)
 // 	{
@@ -43,7 +43,7 @@ int	*ft_range(int min, int max)
 
 	if (min >= max)
 		return (NULL);
-	size = max - min + 1;
+	size = max - min;
 	arr = malloc(size * sizeof(int));
 	if (!arr)
 		return (NULL);
