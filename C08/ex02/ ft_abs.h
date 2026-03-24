@@ -6,8 +6,13 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/24 18:17:25 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/24 18:18:59 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/24 18:33:26 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(Value) ((x) < 0 ? -(x) : (x))
+#ifndef FT_ABS_H
+# define FT_ABS_H
+
+# define ABS(Value) (Value * -1)
+
+#endif
