@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/17 13:48:59 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/17 14:30:21 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/24 14:56:45 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,17 @@
 char	*ft_strjoin(int size, char **strs, char *sep);
 int		ft_tot_len(int size, char **strs, char *sep);
 
-#include <stdio.h>
-#include <string.h>
-int	main(int argc, char **argv)
-{
-	if (argc < 3)
-		return (1);
-	printf("tot_len: %i\n", ft_tot_len(argc - 2, argv + 2, argv[1]));
-	char *str = ft_strjoin(argc - 2, argv + 2, argv[1]);
-	printf("str: %s\n", str);
-	free(str);
-}
+// #include <stdio.h>
+// #include <string.h>
+// int	main(int argc, char **argv)
+// {
+// 	if (argc < 3)
+// 		return (1);
+// 	printf("tot_len: %i\n", ft_tot_len(argc - 2, argv + 2, argv[1]));
+// 	char *str = ft_strjoin(argc - 2, argv + 2, argv[1]);
+// 	printf("str: %s\n", str);
+// 	free(str);
+// }
 
 char	*ft_strdup(char *src);
 
@@ -58,7 +58,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (str[i] = '\0', str);
 }
 
-int	ft_strlen(char *str);
+int		ft_strlen(char *str);
 
 char	*ft_strdup(char *src)
 {
@@ -77,7 +77,6 @@ char	*ft_strdup(char *src)
 	dup[i] = '\0';
 	return (dup);
 }
-
 
 int	ft_tot_len(int size, char **strs, char *sep)
 {
@@ -111,4 +110,3 @@ int	ft_strlen(char *str)
 		len++;
 	return (len);
 }
-
