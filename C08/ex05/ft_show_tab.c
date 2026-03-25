@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:18:00 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/25 16:54:23 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/25 16:55:26 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,7 @@ void	ft_show_tab(struct s_stock_str *par)
 int	ft_strlen(char *str)
 {
 	int	i;
+
 	i = 0;
 	while (str[i])
 		i++;
