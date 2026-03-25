@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 15:35:47 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/25 16:09:26 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/25 16:16:55 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,9 @@
 // 		free(strs[i].copy);
 // 		i++;
 // 	}
+// 	printf("strs[%i] {\nstrs.strs: \"%s\"\n", i, strs[i].str);
+// 	printf("strs.cpy:  \"%s\"\n", strs[i].copy);
+// 	printf("strs.size:  %i\n}\n\n", strs[i].size);
 // 	free(strs);
 // 	return (0);
 // }
@@ -45,7 +48,7 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	t_stock_str	*str_array;
 	int			i;
 
-	str_array = malloc(sizeof(*str_array) * ac);
+	str_array = malloc(sizeof(*str_array) * (ac + 1));
 	if (!str_array)
 		return (NULL);
 	i = 0;
@@ -64,7 +67,8 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 		}
 		i++;
 	}
-	return (str_array);
+	str_array[i].size = 0;
+	return (str_array[i].str = 0, str_array[i].copy = 0, str_array);
 }
 
 int	ft_strlen(char *str)
