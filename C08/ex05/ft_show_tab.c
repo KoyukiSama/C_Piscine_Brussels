@@ -6,10 +6,11 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:18:00 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/25 16:55:26 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/25 19:22:37 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_stock_str.h"
 #include <stdlib.h>
 #include <unistd.h>
 
