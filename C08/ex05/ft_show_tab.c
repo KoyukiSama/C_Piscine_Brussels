@@ -6,7 +6,7 @@
 /*   By: kaclaes <kaclaes@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 16:18:00 by kaclaes           #+#    #+#             */
-/*   Updated: 2026/03/25 16:53:07 by kaclaes          ###   ########.fr       */
+/*   Updated: 2026/03/25 16:54:23 by kaclaes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,10 +89,11 @@
 int		ft_strlen(char *str);
 void	ft_putnbr(int nbr);
 
-void ft_show_tab(struct s_stock_str *par)
+void	ft_show_tab(struct s_stock_str *par)
 {
-	int	i = 0;
+	int	i;
 
+	i = 0;
 	while (par[i].str)
 	{
 		write(1, par[i].str, ft_strlen(par[i].str));
